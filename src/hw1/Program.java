@@ -6,12 +6,12 @@ import java.util.List;
 public class Program {
 
     public static void main(String[] args) {
-        Product product1 = new Product("ООО Лучшая вода", "Бу", -100.12);
-        Product bottleOfWater1 = new BottleOfWater("ООО Чистый источник", "Бутылка с водой [1]", 115, 1);
-        Product bottleOfWater2 = new BottleOfWater("ООО Чистый источник", "Бутылка с водой [2]", 215, 1.5);
-        BottleOfWater bottleOfWater3 = new BottleOfWater("ООО Чистый источник", "Бутылка с водой [3]", 1115, 1.5);
-        Product bottleOfWater4 = new BottleOfWater("ООО Чистый источник", "Бутылка с водой [4]", 55, 2);
-        Product bottleOfMilk1 = new BottleOfMilk("ООО Чистый источник", "Бутылка с молоком", 115, 1.5, 10);
+        Product product1 = new Product("РћРћРћ Р›СѓС‡С€Р°СЏ РІРѕРґР°", "Р‘Сѓ", -100.12);
+        Product bottleOfWater1 = new BottleOfWater("РћРћРћ Р§РёСЃС‚С‹Р№ РёСЃС‚РѕС‡РЅРёРє", "Р‘СѓС‚С‹Р»РєР° СЃ РІРѕРґРѕР№ [1]", 115, 1);
+        Product bottleOfWater2 = new BottleOfWater("РћРћРћ Р§РёСЃС‚С‹Р№ РёСЃС‚РѕС‡РЅРёРє", "Р‘СѓС‚С‹Р»РєР° СЃ РІРѕРґРѕР№ [2]", 215, 1.5);
+        BottleOfWater bottleOfWater3 = new BottleOfWater("РћРћРћ Р§РёСЃС‚С‹Р№ РёСЃС‚РѕС‡РЅРёРє", "Р‘СѓС‚С‹Р»РєР° СЃ РІРѕРґРѕР№ [3]", 1115, 1.5);
+        Product bottleOfWater4 = new BottleOfWater("РћРћРћ Р§РёСЃС‚С‹Р№ РёСЃС‚РѕС‡РЅРёРє", "Р‘СѓС‚С‹Р»РєР° СЃ РІРѕРґРѕР№ [4]", 55, 2);
+        Product bottleOfMilk1 = new BottleOfMilk("РћРћРћ Р§РёСЃС‚С‹Р№ РёСЃС‚РѕС‡РЅРёРє", "Р‘СѓС‚С‹Р»РєР° СЃ РјРѕР»РѕРєРѕРј", 115, 1.5, 10);
 
         List<Product> products = new ArrayList<>();
         products.add(bottleOfWater1);
@@ -24,10 +24,10 @@ public class Program {
         BottleOfWater bottleOfWaterResult = vendingMachine.getBottleOfWater(2);
         vendingMachine.showBuyingInfo(bottleOfWaterResult);
 
-        System.out.println("-------------Домашняя работа-----------------");
+        System.out.println("-------------Р”РѕРјР°С€РЅСЏСЏ СЂР°Р±РѕС‚Р°-----------------");
         Chocolate chocolate1 = new Chocolate("Nestle","Snickers",59.99,500);
         Chocolate chocolate2 = new Chocolate("Milka","Milka with cookies",109.99,750.5);
-        Chocolate chocolate3 = new Chocolate("Бабаевский завод","Бабаевский",39.99,250);
+        Chocolate chocolate3 = new Chocolate("Р‘Р°Р±Р°РµРІСЃРєРёР№ Р·Р°РІРѕРґ","Р‘Р°Р±Р°РµРІСЃРєРёР№",39.99,250);
 
         System.out.println(chocolate1.displayInfo());
         System.out.println(chocolate2.displayInfo());

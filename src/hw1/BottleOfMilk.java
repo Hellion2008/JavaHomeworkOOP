@@ -2,8 +2,8 @@ package hw1;
 
 public class BottleOfMilk extends Product{
 
-    private double volume; // îáúåì
-    private int fatÑontent; // Ñîäåğæàíèå æèğíîñòè
+    private double volume; // Ğ¾Ğ±ÑŠĞµĞ¼
+    private int fatĞ¡ontent; // Ğ¡Ğ¾Ğ´ĞµÑ€Ğ¶Ğ°Ğ½Ğ¸Ğµ Ğ¶Ğ¸Ñ€Ğ½Ğ¾ÑÑ‚Ğ¸
 
     public double getVolume() {
         return volume;
@@ -13,22 +13,22 @@ public class BottleOfMilk extends Product{
         this.volume = volume;
     }
 
-    public int getFatÑontent() {
-        return fatÑontent;
+    public int getFatĞ¡ontent() {
+        return fatĞ¡ontent;
     }
 
-    public void setFatÑontent(int fatÑontent) {
-        this.fatÑontent = fatÑontent;
+    public void setFatĞ¡ontent(int fatĞ¡ontent) {
+        this.fatĞ¡ontent = fatĞ¡ontent;
     }
 
-    public BottleOfMilk(String brand, String name, double price, double volume, int fatÑontent) {
+    public BottleOfMilk(String brand, String name, double price, double volume, int fatĞ¡ontent) {
         super(brand, name, price);
         this.volume = volume;
-        this.fatÑontent = fatÑontent;
+        this.fatĞ¡ontent = fatĞ¡ontent;
     }
 
     @Override
     public String displayInfo() {
-        return String.format("[Áóòûëêà]%s - %s - %f - [îáúåì: %f; æèğíîñòü: %d]", brand, name, price, volume, fatÑontent);
+        return String.format("[Ğ‘ÑƒÑ‚Ñ‹Ğ»ĞºĞ°]%s - %s - %f - [Ğ¾Ğ±ÑŠĞµĞ¼: %f; Ğ¶Ğ¸Ñ€Ğ½Ğ¾ÑÑ‚ÑŒ: %d]", brand, name, price, volume, fatĞ¡ontent);
     }
 }
