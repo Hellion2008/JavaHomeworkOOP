@@ -39,7 +39,7 @@ public class BookingPresenter implements ViewObserver {
     }
 
     public void printChangeReservationTableError(String errorMessage){
-        bookingView.printReservationTableError(errorMessage);
+        bookingView.printChangeReservationTableError(errorMessage);
     }
 
     @Override
