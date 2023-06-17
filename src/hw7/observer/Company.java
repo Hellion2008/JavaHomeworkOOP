@@ -15,7 +15,7 @@ public class Company {
         this.jobAgency = jobAgency;
     }
 
-    public void needEmployee(String nameVacancy, double maxSalary){
+    public void needEmployee(VacancyType nameVacancy, double maxSalary){
         Vacancy vacancy = new Vacancy(nameVacancy, maxSalary);
         jobAgency.sendOffer(companyName, vacancy);
     }

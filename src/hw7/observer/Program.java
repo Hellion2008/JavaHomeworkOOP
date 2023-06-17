@@ -18,20 +18,20 @@ public class Program {
         Company google = new Company("Google", jobAgency);
         Company yandex = new Company("Yandex", jobAgency);
 
-        Master ivanov = new Master("Ivanov");
-        Master petrov = new Master("Petrov");
-        Student sidorov = new Student("Sidorov");
-        DepartmentHead wayne = new DepartmentHead("Wayne");
+        jobAgency.registerObserver(new Master("Ivanov", "курьер"));
+        jobAgency.registerObserver(new Master("Petrov", "Frontend-программист"));
+        jobAgency.registerObserver(new Student("Sidorov", "Java-ПРОГРАММИСТ"));
+        jobAgency.registerObserver(new DepartmentHead("Wayne", "Java-программист"));
+        jobAgency.registerObserver(new Student("Parker", "Преподаватель"));
+        jobAgency.registerObserver(new DepartmentHead("Osborn", "Backend-программист"));
 
-        jobAgency.registerObserver(ivanov);
-        jobAgency.registerObserver(petrov);
-        jobAgency.registerObserver(sidorov);
-        jobAgency.registerObserver(wayne);
+        for (int i = 0; i < 5; i++){
+            geekBrains.needEmployee(VacancyType.Teacher, randomSalary(70000, 100000));
+            google.needEmployee(VacancyType.JavaProgrammer, randomSalary(150000, 200000));
+            google.needEmployee(VacancyType.Frontend, randomSalary(100000, 105000));
+            yandex.needEmployee(VacancyType.Courier, randomSalary(30000, 50000));
+            yandex.needEmployee(VacancyType.Backend, randomSalary(100000, 110000));
 
-        for (int i = 0; i < 3; i++){
-            geekBrains.needEmployee("Преподаватель", randomSalary(70000, 100000));
-            google.needEmployee("Java-программист", randomSalary(150000, 200000));
-            yandex.needEmployee("Курьер", randomSalary(30000, 50000));
             System.out.println("________________________________");
         }
     }

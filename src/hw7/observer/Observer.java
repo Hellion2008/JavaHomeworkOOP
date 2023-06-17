@@ -2,8 +2,10 @@ package hw7.observer;
 
 public interface Observer {
 
-    void receiveOffer(String companyName, Vacancy vacancy);
+    void receiveOffer(String companyName, double salary, String vacancy);
 
-    boolean takeJob (Vacancy vacancy);
+    boolean takeJob (String vacancy);
+
+    String getVacancyName();
 
 }

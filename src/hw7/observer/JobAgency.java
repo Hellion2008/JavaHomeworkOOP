@@ -20,10 +20,14 @@ public class JobAgency implements Publisher {
 
     @Override
     public void sendOffer(String companyName, Vacancy vacancy) {
+        String companyVacancy = vacancy.getVacancyName().getVacancy();
+        System.out.println("ВАКАНСИЯ " + companyVacancy);
             for (Observer observer: observers) {
-                if (vacancy.isRelevance()) {
-                    observer.receiveOffer(companyName, vacancy);
-                    if (observer.takeJob(vacancy)){
+                if (vacancy.isRelevance()
+                        && companyVacancy.equalsIgnoreCase(observer.getVacancyName())
+                    ) {
+                    observer.receiveOffer(companyName, vacancy.getMaxSalary(), companyVacancy);
+                    if (observer.takeJob(companyVacancy)){
                         removeObserver(observer);
                         break;
                     }

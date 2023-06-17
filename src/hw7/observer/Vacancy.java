@@ -2,17 +2,17 @@ package hw7.observer;
 
 public class Vacancy {
 
-    private String vacancyName;
+    private VacancyType vacancyName;
 
     private double maxSalary;
 
     private boolean relevance = true;
 
-    public String getVacancyName() {
+    public VacancyType getVacancyName() {
         return vacancyName;
     }
 
-    public void setVacancyName(String vacancyName) {
+    public void setVacancyName(VacancyType vacancyName) {
         this.vacancyName = vacancyName;
     }
 
@@ -32,12 +32,12 @@ public class Vacancy {
         this.relevance = relevance;
     }
 
-    public Vacancy(String vacancyName, double maxSalary) {
+    public Vacancy(VacancyType vacancyName, double maxSalary) {
         this.vacancyName = vacancyName;
         this.maxSalary = maxSalary;
     }
 
-    public Vacancy(String vacancyName) {
+    public Vacancy(VacancyType vacancyName) {
         this.vacancyName = vacancyName;
     }
 }
